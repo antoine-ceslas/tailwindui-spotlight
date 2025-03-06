@@ -1,0 +1,56 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import designSystem from './swimmingpool.png'
+import designSystem02 from './vsjcalendar.png'
+
+export const article = {
+  author: 'Adam Wathan',
+  date: '2022-09-02',
+  title: 'Logiciel de club de natation',
+  description:
+    'Le but pour ce projet scolaire actuellement en cours est de proposer de simplifier la partie administratif pour le club, et de simplifier le suivi des séances d’entraînements pour les nageurs et le coach avec un logiciel Desktop & une app Mobile',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+
+## Objectif
+
+Notre projet vise à simplifier la gestion administrative des clubs de natation et à optimiser le suivi des entraînements grâce à une application mobile (React Native) et un logiciel desktop (Next.js). Un module de montage vidéo permettra également d’analyser les performances des nageurs.
+
+<Image src={designSystem} alt="" />
+
+
+
+## Analyse des Besoins
+
+Nous avons identifié les principaux défis des clubs de natation :
+
+- Gestion administrative complexe.
+
+- Difficulté à suivre les performances des nageurs.
+
+- Absence d’outils digitaux adaptés aux coachs et aux nageurs.
+
+## Analyse des Besoins
+Nous avons conçu des maquettes sur Figma pour définir une interface utilisateur intuitive et adaptée aux besoins des clubs. Nos designs incluent :
+
+- Interface administrateur : gestion des membres, plannings, inscriptions, paiements.
+
+- Interface nageur : accès aux entraînements, notifications, vidéos d’analyse.
+
+- Interface coach : suivi des progrès, conseils personnalisés, annotations vidéo.
+
+<Image src={designSystem02} alt="" />
+
+
+## Logiciel Desktop (Next.js)
+Le logiciel offre une solution centralisée pour les administrateurs et coachs avec :
+
+-  Gestion des adhérents : inscriptions, paiements, dossiers médicaux.
+- Suivi des entraînements : plannings interactifs et notifications.
+
