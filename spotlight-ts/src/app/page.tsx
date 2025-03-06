@@ -188,12 +188,22 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Silogis',
-      title: 'Développeur web React & UX-UI Designer',
+      title: 'Alternance : Développeur web React & UX-UI Designer',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'Silogis',
+      title: 'Stage :  Développeur web React & UX-UI Designer',
+      logo: logoPlanetaria,
+      start: 'Avril 2024',
+      end: {
+        label: 'Juillet 2024',
+        dateTime: '2024-07',
       },
     },
     
