@@ -13,6 +13,42 @@ import {
   XIcon,
 } from "@/components/SocialIcons";
 import portraitImage from "@/images/photo_cv.jpg";
+import { SimpleLayout } from "@/components/SimpleLayout";
+import { Section } from "@/components/Section";
+import { Card } from "@/components/Card";
+
+
+function ToolsSection({
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Section>) {
+  return (
+    <Section {...props}>
+      <ul role="list" className="space-y-16">
+        {children}
+      </ul>
+    </Section>
+  );
+}
+
+function Tool({
+  title,
+  href,
+  children,
+}: {
+  title: string;
+  href?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Card as="li">
+      <Card.Title as="h3" href={href}>
+        {title}
+      </Card.Title>
+      <Card.Description>{children}</Card.Description>
+    </Card>
+  );
+}
 
 function SocialLink({
   className,
@@ -71,20 +107,58 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Antoine Moulin, développeur web et mobile passionné.
+            Mon parcours
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              J ai obtenu mon baccalauréat scientifique avec mention assez bien. Ensuite, j ai poursuivi mes études en BUT Métiers du Multimédia et de l Internet (MMI).
-            </p>
-            <p>
-              J ai effectué un stage chez Slogis où j ai pu développer mes compétences créatives avec la suite Adobe, notamment en montage vidéo et création de visuels.
-            </p>
-            <p>
-              Par la suite, je me suis orienté vers le développement, en me spécialisant en Next.js, React Native, design UX/UI avec Figma, et je suis actuellement à la recherche d une alternance en développement web ou mobile.
-            </p>
-          </div>
-        </div>
+               <div className="space-y-20 mt-4">
+                 <ToolsSection title="Baccaulauréat Général">
+                   <Tool title="Scientifique">
+                    Science de l'ingénieur, Physique-chimie & Mathématiques
+                   </Tool>
+  
+
+                 </ToolsSection>
+                 <ToolsSection title="BUT1 Métiers du Multimédia et de l'Internet">
+                   <Tool title="Création Numérique (suite Adobe)">
+                     Large évantails de compétences, allant du montage vidéo, à la retouche photo en pssant par la création d'illustration visuelle dans le but de créer des identités visuelles aboutit
+                   </Tool>
+
+                   <Tool title="Développement web">
+                     Compétences basiques : HTML - CSS 
+                   </Tool>
+                 </ToolsSection>
+                 <ToolsSection title="BUT2 Métiers du Multimédia et de l'Internet">
+                     <Tool title="Javascript">
+                     Apprentissage et utilisation de JavaScript pour ajouter de l'interactivité aux pages web. Compréhension des concepts clés tels que les variables, les fonctions et les événements.
+                     </Tool>
+                     <Tool title="Angular">
+                     Apprentissage et utilisation d'Angular pour développer des applications web robustes et évolutives. Compréhension des concepts clés tels que les composants, les services et les modules.
+                     </Tool>
+                     <Tool title="React">
+                     Apprentissage et utilisation de React pour créer des interfaces utilisateur dynamiques et réactives. Compréhension des concepts clés tels que les composants, les états et les props.
+                     </Tool>
+                   <Tool title="UX-UI Design">
+                     Apprentissage de différents logiciels d'UX-UI Design, tels que Figma, Adobe XD, Sketch, InVision, etc.
+                   </Tool>
+                 </ToolsSection>
+                 <ToolsSection title="BUT3 Métiers du Multimédia et de l'Internet">
+                   <Tool title="Next JS">
+                     It is not the newest kid on the block but it is still the fastest. The
+                     Sublime Text of the application launcher world.
+                   </Tool>
+                   <Tool title="React Native">
+                     Using a daily notes system instead of trying to keep things
+                     organized by topics has been super powerful for me. And with
+                     Reflect, it is still easy for me to keep all of that stuff
+                     discoverable by topic even though all of my writing happens in the
+                     daily note.
+                   </Tool>
+                   <Tool title="Quadrilingue en puissance">
+                     Je collection les langues comme les timbres, Anglais, Tchèque, Slovaque et même Français ! Je ne comptabilise même pas l'espagnol pas peur de vous effrayer, le Chinois arrive bientôt.
+                   </Tool>
+                   
+                 </ToolsSection>
+               </div>
+         </div>
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink href="#" icon={XIcon}>
@@ -104,7 +178,7 @@ export default function About() {
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              antoine.moulin04@laposte.net
             </SocialLink>
           </ul>
         </div>

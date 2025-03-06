@@ -52,7 +52,7 @@ export default function Speaking() {
   return (
     <SimpleLayout
       title="Veille technologique"
-      intro="Quant à la veille technologique, je parviens à créer une routine quotidienne, mais non volontaire, grâce à l outil Dailydev me permettant de découvrir de nouvelles choses. Mais rien ne sera jamais plus efficace que la curiosité naturel, en regardant des vidéos youtube & divers contenu sur le sujet. Outils utilisés : Daily Dev, Documentations, Newsletter, Youtube"
+      intro="Quant à la veille technologique, je parviens à créer une routine quotidienne, mais non volontaire, grâce à l outil Dailydev me permettant de découvrir de nouvelles choses. Mais rien ne sera jamais plus efficace que la curiosité naturel, en regardant des vidéos youtube & divers contenu sur le sujet. Outils utilisés : Daily Dev, Documentations, Newsletter, Youtube et la Ferme du web"
     ></SimpleLayout>
   );
 }

@@ -10,7 +10,7 @@ import logoPlanetaria from "@/images/logos/planetaria.svg";
 const projects = [
   {
     name: "Silogis",
-    description: "Création d un logiciel pour itinérants",
+    description: "Création d'un logiciel pour itinérants",
     link: { href: "https://www.silogis.fr/", label: "silogis.fr" },
     logo: logoPlanetaria,
   },
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Projets"
-      intro="Au fil des années, j ai travaillé sur de nombreux petits projets, mais ceux-ci sont ceux dont je suis le plus fier. Beaucoup d entre eux sont open-source, donc si quelque chose attire votre attention, consultez le code et contribuez si vous avez des idées pour l améliorer."
+      title="Mes Expériences"
+      intro="Au fil des années, j'ai travaillé sur de nombreux petits projets, mais ceux-ci sont ceux dont je suis le plus fier. Beaucoup d entre eux sont open-source, donc si quelque chose attire votre attention, consultez le code et contribuez si vous avez des idées pour l'améliorer."
     >
       <ul
         role="list"
