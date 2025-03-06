@@ -1,16 +1,18 @@
-import { type Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+/* eslint-disable react/no-unescaped-entities */
 
-import { Container } from '@/components/Container'
+import { type Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import clsx from "clsx";
+
+import { Container } from "@/components/Container";
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   XIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/photo_cv.jpg'
+} from "@/components/SocialIcons";
+import portraitImage from "@/images/photo_cv.jpg";
 
 function SocialLink({
   className,
@@ -18,13 +20,13 @@ function SocialLink({
   children,
   icon: Icon,
 }: {
-  className?: string
-  href: string
-  icon: React.ComponentType<{ className?: string }>
-  children: React.ReactNode
+  className?: string;
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+  children: React.ReactNode;
 }) {
   return (
-    <li className={clsx(className, 'flex')}>
+    <li className={clsx(className, "flex")}>
       <Link
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
@@ -33,10 +35,10 @@ function SocialLink({
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
+  );
 }
 
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -44,14 +46,14 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
       />
     </svg>
-  )
+  );
 }
 
 export const metadata: Metadata = {
-  title: 'A propos',
+  title: "A propos",
   description:
-    'Je suis Antoine Moulin, dévellopeur web et mobile. Je suis passionné par le développement web et mobile, et j\'aime partager mes connaissances.',
-}
+    "Je suis Antoine Moulin, développeur web et mobile. Je suis passionné par le développement web et mobile, et j aime partager mes connaissances.",
+};
 
 export default function About() {
   return (
@@ -68,19 +70,18 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Antoine Moulin, dévellopeur web et mobile passionné.
-            </h1>
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            Antoine Moulin, développeur web et mobile passionné.
+          </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-          
             <p>
-              J ai obtenu mon baccalauréat scientifique avec mention assez bien. Ensuite, j'ai poursuivi mes études en BUT Métiers du Multimédia et de l'Internet (MMI).
+              J ai obtenu mon baccalauréat scientifique avec mention assez bien. Ensuite, j ai poursuivi mes études en BUT Métiers du Multimédia et de l Internet (MMI).
             </p>
             <p>
-              J ai effectué un stage chez Slogis où j'ai pu développer mes compétences créatives avec la suite Adobe, notamment en montage vidéo et création de visuels.
+              J ai effectué un stage chez Slogis où j ai pu développer mes compétences créatives avec la suite Adobe, notamment en montage vidéo et création de visuels.
             </p>
             <p>
-              Par la suite, je me suis orienté vers le développement, en me spécialisant en Next.js, React Native, design UX/UI avec Figma, et je suis actuellement à la recherche d'une alternance en développement web ou mobile.
+              Par la suite, je me suis orienté vers le développement, en me spécialisant en Next.js, React Native, design UX/UI avec Figma, et je suis actuellement à la recherche d une alternance en développement web ou mobile.
             </p>
           </div>
         </div>
@@ -109,5 +110,5 @@ export default function About() {
         </div>
       </div>
     </Container>
-  )
+  );
 }

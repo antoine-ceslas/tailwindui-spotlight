@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+
+
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
