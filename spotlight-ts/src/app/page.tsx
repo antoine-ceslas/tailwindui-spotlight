@@ -257,7 +257,7 @@ export default async function Home() {
           </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Je suis Antoine Moulin, un développeur web full stack et mobile passionné basé à Paris. 
-            J'aime créer des applications innovantes et performantes pour améliorer la vie des utilisateurs.
+            J aime créer des applications innovantes et performantes pour améliorer la vie des utilisateurs.
             </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />

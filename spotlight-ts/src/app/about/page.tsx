@@ -74,10 +74,10 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
           
             <p>
-              J'ai obtenu mon baccalauréat scientifique avec mention assez bien. Ensuite, j'ai poursuivi mes études en BUT Métiers du Multimédia et de l'Internet (MMI).
+              J ai obtenu mon baccalauréat scientifique avec mention assez bien. Ensuite, j'ai poursuivi mes études en BUT Métiers du Multimédia et de l'Internet (MMI).
             </p>
             <p>
-              J'ai effectué un stage chez Slogis où j'ai pu développer mes compétences créatives avec la suite Adobe, notamment en montage vidéo et création de visuels.
+              J ai effectué un stage chez Slogis où j'ai pu développer mes compétences créatives avec la suite Adobe, notamment en montage vidéo et création de visuels.
             </p>
             <p>
               Par la suite, je me suis orienté vers le développement, en me spécialisant en Next.js, React Native, design UX/UI avec Figma, et je suis actuellement à la recherche d'une alternance en développement web ou mobile.
